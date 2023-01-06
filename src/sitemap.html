@@ -12,204 +12,222 @@
   <body
     class="noisy bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-  <header class="fixed w-full bg-spot-black -z--spot-index-level-4">
-    <section
-      class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
-    >
-      <div
-        class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+    <header class="fixed -z--spot-index-level-4 w-full bg-spot-black">
+      <section
+        class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
-        <input
-          class="hidden h-6 border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Søg..."
-        />
-        <img
-          class="w-4 cursor-pointer"
-          src="./img/svg/search.svg"
-          alt="søgeikon"
-        />
-      </div>
-      <h3 class="link p-0 no-underline">Hjælp</h3>
-    </section>
-    <div
-      class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
-    >
-      <div class="w-full">
-        <div class="flex w-full justify-between lg:justify-start">
-          <div class="dropdown">
-            <div tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
-            >
-              <li>
-                <a href="lineup.html" class="link no-underline">lineup</a>
-              </li>
-              <li>
-                <a href="program.html" class="link no-underline">program</a>
-              </li>
-              <li>
-                <a href="billetter.html" class="link no-underline"
-                  >billetter</a
+        <div
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-light-gray"
+        >
+          <input
+            class="hidden h-6 border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block"
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Søg..."
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./img/svg/search.svg"
+            alt="søgeikon"
+          />
+        </div>
+        <h3 class="link p-0 no-underline">Hjælp</h3>
+      </section>
+      <div
+        class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
+      >
+        <div class="w-full">
+          <div class="flex w-full justify-between lg:justify-start">
+            <div class="dropdown">
+              <div tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-              </li>
-              <li tabindex="0">
-                <a href="om.html" class="justify-between no-underline">
-                  Om
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
+              >
+                <li>
+                  <a href="lineup.html" class="link no-underline">lineup</a>
+                </li>
+                <li>
+                  <a href="program.html" class="link no-underline">program</a>
+                </li>
+                <li>
+                  <a href="billetter.html" class="link no-underline"
+                    >billetter</a
                   >
-                    <path
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </a>
-                <ul class="bg-spot-black p-2">
-                  <li>
-                    <a href="om.html" class="link no-underline">om Spot</a>
-                  </li>
-                  <li>
-                    <a href="nyheder.html" class="link no-underline"
-                      >nyheder</a
+                </li>
+                <li tabindex="0">
+                  <a href="om.html" class="justify-between no-underline">
+                    Om
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
-                  </li>
-                  <li>
-                    <a href="frivillig.html" class="link no-underline"
-                      >Frivillige</a
-                    >
-                  </li>
-                  <li>
-                    <a href="faq.html" class="link no-underline">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="ansog.html" class="link no-underline">Ansøg</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="link no-underline">Spot+</a></li>
-            </ul>
+                      <path
+                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="bg-spot-black p-2">
+                    <li>
+                      <a href="om.html" class="link no-underline">om Spot</a>
+                    </li>
+                    <li>
+                      <a href="nyheder.html" class="link no-underline"
+                        >nyheder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="frivillig.html" class="link no-underline"
+                        >Frivillige</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="link no-underline">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="ansog.html" class="link no-underline">Ansøg</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="link no-underline">Spot+</a></li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+            >
+              <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
+              <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
+                Spot Festival
+              </h3>
+            </a>
           </div>
-          <a
-            href="index.html"
-            class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+        </div>
+        <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
+          <ul
+            class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
           >
-            <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
-            <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
-              Spot Festival
-            </h3>
-          </a>
+            <li>
+              <a href="lineup.html" class="link p-0 no-underline">lineup</a>
+            </li>
+            <li>
+              <a href="program.html" class="link p-0 no-underline">program</a>
+            </li>
+            <li>
+              <a href="billetter.html" class="link p-0 no-underline"
+                >billetter</a
+              >
+            </li>
+            <li class="link p-0 no-underline" tabindex="0">
+              <a href="om.html" class="p-0">
+                Om
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-spot-black p-2">
+                <li>
+                  <a href="om.html" class="link mb-2 p-0 no-underline"
+                    >Om Spot</a
+                  >
+                </li>
+                <li>
+                  <a href="nyheder.html" class="link mb-2 p-0 no-underline"
+                    >nyheder</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillig.html" class="link mb-2 p-0 no-underline"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
+                </li>
+                <li>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline"
+                    >Ansøg</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
-        <ul
-          class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
-        >
-          <li>
-            <a href="lineup.html" class="link p-0 no-underline">lineup</a>
-          </li>
-          <li>
-            <a href="program.html" class="link p-0 no-underline">program</a>
-          </li>
-          <li>
-            <a href="billetter.html" class="link p-0 no-underline"
-              >billetter</a
-            >
-          </li>
-          <li
-            class="link p-0 no-underline"
-            tabindex="0"
-          >
-            <a href="om.html" class="p-0">
-              Om
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="bg-spot-black p-2">
-              <li>
-                <a href="om.html" class="link mb-2 p-0 no-underline"
-                  >Om Spot</a
-                >
-              </li>
-              <li>
-                <a href="nyheder.html" class="link p-0 mb-2 no-underline"
-                  >nyheder</a
-                >
-              </li>
-              <li>
-                <a href="frivillig.html" class="link mb-2 p-0 no-underline"
-                  >Frivillige</a
-                >
-              </li>
-              <li>
-                <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
-              </li>
-              <li>
-                <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    </header>
     <main class="mx-spot-margin-50">
-        <section class="noisy w-full fixed -z--spot-index-level-1"></section>
+      <section class="noisy fixed -z--spot-index-level-1 w-full"></section>
       <section class="py-spot-margin-120">
         <h1 class="font-spot-display text-spot-mega md:text-spot-display">
           sitemap
         </h1>
         <div class="flex justify-center md:text-spot-lg">
-            <ul class="list-disc flex flex-col gap-spot-gap-25">
-              <li class="hover:text-spot-accent-1"><a href="index.html">Forside</a></li>
-              <li class="hover:text-spot-accent-1"><a href="lineup.html">lineup side</a></li>
-              <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
-                <li class="hover:text-spot-accent-1 md:text-spot-base"><a href="artist.html">artist side</a></li>
-              </ul>
-              <li class="hover:text-spot-accent-1"><a href="program.html">program side</a></li>
-              <li class="hover:text-spot-accent-1"><a href="billetter.html">billetter side</a></li>
-              <li class="hover:text-spot-accent-1"><a href="om.html">om spot side</a></li>
-              <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
-                <li class="hover:text-spot-accent-1 md:text-spot-base"><a href="nyheder.html">Nyheder side</a></li>
-                <li class="hover:text-spot-accent-1 md:text-spot-base"><a href="frivillig.html">frivillig side</a></li>
-                <li class="hover:text-spot-accent-1 md:text-spot-base"><a href="faq.html">FAQ side</a></li>
-                <li class="hover:text-spot-accent-1 md:text-spot-base"><a href="ansog.html">ansøg side</a></li>
-              </ul>
+          <ul class="flex list-disc flex-col gap-spot-gap-25">
+            <li class="hover:text-spot-accent-1">
+              <a href="index.html">Forside</a>
+            </li>
+            <li class="hover:text-spot-accent-1">
+              <a href="lineup.html">lineup side</a>
+            </li>
+            <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
+              <li class="hover:text-spot-accent-1 md:text-spot-base">
+                <a href="artist.html">artist side</a>
+              </li>
             </ul>
+            <li class="hover:text-spot-accent-1">
+              <a href="program.html">program side</a>
+            </li>
+            <li class="hover:text-spot-accent-1">
+              <a href="billetter.html">billetter side</a>
+            </li>
+            <li class="hover:text-spot-accent-1">
+              <a href="om.html">om spot side</a>
+            </li>
+            <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
+              <li class="hover:text-spot-accent-1 md:text-spot-base">
+                <a href="nyheder.html">Nyheder side</a>
+              </li>
+              <li class="hover:text-spot-accent-1 md:text-spot-base">
+                <a href="frivillig.html">frivillig side</a>
+              </li>
+              <li class="hover:text-spot-accent-1 md:text-spot-base">
+                <a href="faq.html">FAQ side</a>
+              </li>
+              <li class="hover:text-spot-accent-1 md:text-spot-base">
+                <a href="ansog.html">ansøg side</a>
+              </li>
+            </ul>
+          </ul>
         </div>
       </section>
-      
     </main>
     <footer class="relative -z--spot-index-level-2 bg-spot-black">
       <div
@@ -354,7 +372,7 @@
             <li>
               <a href="https://www.facebook.com/spotfestival">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/facebook.svg"
                   alt="facebook logo"
               /></a>
@@ -362,7 +380,7 @@
             <li>
               <a href="https://www.youtube.com/@SPOTFestivaldk">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/youtube.svg"
                   alt="youtube logo"
               /></a>
@@ -370,7 +388,7 @@
             <li>
               <a href="https://www.instagram.com/spotfestival/">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/instagram.svg"
                   alt="instagram logo"
               /></a>
@@ -394,7 +412,12 @@
                 >+45 71 74 71 22</span
               >
             </p>
-            <p class="pt-spot-padding-8 text-spot-sm">Adresse: <span class="underline hover:text-spot-accent-1">Vester Alle 15, 8000 Aarhus C DK</span></p>
+            <p class="pt-spot-padding-8 text-spot-sm">
+              Adresse:
+              <span class="underline hover:text-spot-accent-1"
+                >Vester Alle 15, 8000 Aarhus C DK</span
+              >
+            </p>
           </div>
         </section>
         <section
@@ -411,11 +434,8 @@
       <section
         class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxs text-spot-light-gray md:text-spot-xs"
       >
-        <p>
-          A KEA SCHOOL PROJECT BY LAURA & MATHILDE
-        </p>
+        <p>A KEA SCHOOL PROJECT BY LAURA & MATHILDE</p>
       </section>
     </footer>
-      
   </body>
 </html>

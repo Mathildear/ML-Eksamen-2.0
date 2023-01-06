@@ -12,13 +12,12 @@
   <body
     class="relative bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-  
     <header class="fixed -z--spot-index-level-4 w-full bg-spot-black">
       <section
         class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
         <div
-          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-light-gray"
         >
           <input
             class="hidden h-6 border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block"
@@ -197,18 +196,37 @@
           program
         </h1>
         <div
-          class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:justify-center lg:items-center"
+          class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:items-center lg:justify-center"
         >
           <div class="mt-spot-margin-30">
             <section>
-              <h4 class="mb-spot-margin-25 text-spot-sm">
+              <p class="mb-spot-margin-15 text-spot-sm">
+                sorter efter dag
+              </p>
+    
+              <div class="flex flex-row gap-spot-gap-25 mb-spot-margin-40">
+                <a
+                  href="#fredagprogram"
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  fredag
+                </a>
+                <a
+                  href="#lørdagprogram"
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  lørdag
+                </a>
+              </div>
+    
+              <h4 class="mb-spot-margin-15 text-spot-sm">
                 Søg efter artist eller sted
               </h4>
               <div
                 class="flex w-fit flex-row justify-between border-spot-1 border-spot-white bg-spot-black py-spot-padding-8 pr-spot-padding-8 md:w-full"
               >
                 <input
-                  class="h-6 w-full border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block placeholder:uppercase"
+                  class="h-6 w-full border-none bg-spot-black placeholder:text-spot-sm placeholder:uppercase placeholder:text-spot-light-gray md:block"
                   type="text"
                   name="searchBar"
                   id="searchBar"
@@ -217,8 +235,8 @@
                 <img class="w-4" src="./img/svg/search.svg" alt="søgeikon" />
               </div>
             </section>
-            <section class="mt-spot-margin-40 mb-spot-margin-40">
-              <h4 class="mb-spot-margin-25 text-spot-sm">
+            <section class="mt-spot-margin-40 mb-spot-margin-60">
+              <h4 class="mb-spot-margin-15 text-spot-sm">
                 Søg efter tidspunkt
               </h4>
               <span class="multi-range">
@@ -247,7 +265,7 @@
               </span>
             </section>
             <section>
-              <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter genre</h4>
+              <h4 class="mb-spot-margin-15 text-spot-sm">Søg efter genre</h4>
               <div class="flex flex-wrap gap-spot-gap-5">
                 <button
                   class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
@@ -292,16 +310,14 @@
             </section>
           </div>
           <div class="flex flex-col md:flex-row">
-            <picture class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden">
+            <picture class="mt-spot-margin-0 mb-spot-margin-40 sm:hidden">
               <source class="" srcset="img/map-ver.avif" type="image/avif" />
               <img class="" src="img/map-ver.webp" alt="koncertbillede" />
             </picture>
-            <picture
-              class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block"
-            >
+            <picture class="mt-spot-margin-0 mb-spot-margin-40 hidden sm:block">
               <source class="" srcset="img/map-hor.avif" type="image/avif" />
               <img
-                class="md:mt-spot-margin-20 md:h-fit md:max-w-sm lg:max-w-xl"
+                class="md:mt-spot-margin-0 md:h-fit md:max-w-sm lg:max-w-xl"
                 src="img/map-hor.webp"
                 alt="koncertbillede"
               />
@@ -333,9 +349,11 @@
             </a>
           </div>
 
-          <table class="table-fixed flex flex-col pb-spot-padding-50 md:hidden">
+          <table class="flex table-fixed flex-col pb-spot-padding-50 md:hidden">
             <thead>
-              <tr class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm">
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
                 <th>tid</th>
                 <th>Artist</th>
                 <th>sted</th>
@@ -346,42 +364,48 @@
                 class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
               >
                 <td>11:30</td>
-                <td class="text-center">Black tower</td>
+                <td class="text-center">
+                  <a href="artist.html">Black tower</a>
+                </td>
                 <td>radar</td>
               </tr>
               <tr
                 class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
               >
                 <td>12:00</td>
-                <td class="text-center">Dizzy Mizz Lizzy</td>
+                <td class="text-center">
+                  <a href="artist.html">Dizzy Mizz Lizzy</a>
+                </td>
                 <td>radar</td>
               </tr>
               <tr
                 class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
               >
                 <td>13:15</td>
-                <td class="text-center">Casper Amba</td>
+                <td class="text-center">
+                  <a href="artist.html">Casper Amba</a>
+                </td>
                 <td>radar</td>
               </tr>
               <tr
                 class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
               >
                 <td>14:30</td>
-                <td>Emely</td>
+                <td><a href="artist.html">Emely</a></td>
                 <td>radar</td>
               </tr>
               <tr
                 class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
               >
                 <td>15:00</td>
-                <td>carmie</td>
+                <td><a href="artist.html">carmie</a></td>
                 <td>radar</td>
               </tr>
               <tr
                 class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
               >
                 <td>16:15</td>
-                <td>danefæ</td>
+                <td><a href="artist.html">danefæ</a></td>
                 <td>radar</td>
               </tr>
             </tbody>
@@ -392,7 +416,7 @@
           >
             <div class="mx-spot-margin-50 flex flex-col items-center">
               <h3 class="text-center text-spot-lg font-spot-black">Fredag</h3>
-              <table class="table-auto w-2/3 ">
+              <table class="w-2/3 table-auto">
                 <thead>
                   <tr
                     class="flex justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
@@ -408,7 +432,7 @@
                   >
                     <td>11:30</td>
                     <td class="flex flex-col">
-                      black tower <br />
+                      <a href="artist.html">black tower</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >rock</span
@@ -421,7 +445,7 @@
                   >
                     <td>12:00</td>
                     <td class="flex flex-col">
-                      Dizzy Mizz lizzy<br />
+                      <a href="artist.html">Dizzy Mizz lizzy</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >rock</span
@@ -434,7 +458,7 @@
                   >
                     <td>13:15</td>
                     <td class="flex flex-col">
-                      casper Amba <br />
+                      <a href="artist.html">casper Amba</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >R&B</span
@@ -447,7 +471,7 @@
                   >
                     <td>14:30</td>
                     <td class="flex flex-col">
-                      Emely <br />
+                      <a href="artist.html">Emely</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >pop</span
@@ -460,7 +484,7 @@
                   >
                     <td>15:00</td>
                     <td class="flex flex-col">
-                      carmie <br />
+                      <a href="artist.html">carmie</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >R&B</span
@@ -473,7 +497,7 @@
                   >
                     <td>16:15</td>
                     <td class="flex flex-col">
-                      Danefæ <br />
+                      <a href="artist.html">Danefæ</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >Rock</span
@@ -491,7 +515,7 @@
           >
             <div class="mx-spot-margin-50 flex flex-col items-center">
               <h3 class="text-center text-spot-lg font-spot-black">Lørdag</h3>
-              <table class="table-auto w-2/3 ">
+              <table class="w-2/3 table-auto">
                 <thead>
                   <tr
                     class="flex justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
@@ -507,7 +531,7 @@
                   >
                     <td>13:45</td>
                     <td class="flex flex-col">
-                      de jammerlige <br />
+                      <a href="artist.html">de jammerlige</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >jazz</span
@@ -520,7 +544,7 @@
                   >
                     <td>15:00</td>
                     <td class="flex flex-col">
-                      ava<br />
+                      <a href="artist.html">ava</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >r&b</span
@@ -533,7 +557,7 @@
                   >
                     <td>16:30</td>
                     <td class="flex flex-col">
-                      Ameli Dot<br />
+                      <a href="artist.html">Ameli Dot</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >pop</span
@@ -546,7 +570,7 @@
                   >
                     <td>17:45</td>
                     <td class="flex flex-col">
-                      first hate <br />
+                      <a href="artist.html">first hate</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >pop</span
@@ -559,7 +583,7 @@
                   >
                     <td>18:45</td>
                     <td class="flex flex-col">
-                      erika <br />
+                      <a href="artist.html">erika</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >pop</span
@@ -572,7 +596,7 @@
                   >
                     <td>20:00</td>
                     <td class="flex flex-col">
-                      fabräk <br />
+                      <a href="artist.html">fabräk</a>
                       <span
                         class="text-center text-sm font-spot-regular italic text-spot-light-gray"
                         >Rock</span
@@ -582,13 +606,10 @@
                   </tr>
                 </tbody>
               </table>
-              
-              
             </div>
           </section>
         </div>
       </div>
-    
     </main>
     <footer class="relative -z--spot-index-level-2 bg-spot-black">
       <div
@@ -733,7 +754,7 @@
             <li>
               <a href="https://www.facebook.com/spotfestival">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/facebook.svg"
                   alt="facebook logo"
               /></a>
@@ -741,7 +762,7 @@
             <li>
               <a href="https://www.youtube.com/@SPOTFestivaldk">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/youtube.svg"
                   alt="youtube logo"
               /></a>
@@ -749,7 +770,7 @@
             <li>
               <a href="https://www.instagram.com/spotfestival/">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/instagram.svg"
                   alt="instagram logo"
               /></a>
@@ -773,7 +794,12 @@
                 >+45 71 74 71 22</span
               >
             </p>
-            <p class="pt-spot-padding-8 text-spot-sm">Adresse: <span class="underline hover:text-spot-accent-1">Vester Alle 15, 8000 Aarhus C DK</span></p>
+            <p class="pt-spot-padding-8 text-spot-sm">
+              Adresse:
+              <span class="underline hover:text-spot-accent-1"
+                >Vester Alle 15, 8000 Aarhus C DK</span
+              >
+            </p>
           </div>
         </section>
         <section
@@ -790,12 +816,8 @@
       <section
         class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxs text-spot-light-gray md:text-spot-xs"
       >
-        <p>
-          A KEA SCHOOL PROJECT BY LAURA & MATHILDE
-        </p>
+        <p>A KEA SCHOOL PROJECT BY LAURA & MATHILDE</p>
       </section>
     </footer>
-   
-
   </body>
 </html>
