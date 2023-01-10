@@ -12,251 +12,269 @@
   <body
     class="noisy bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-  <header class="fixed w-full bg-spot-black -z--spot-index-level-4">
-    <section
-      class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
-    >
-      <div
-        class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-light-gray"
+    <header class="fixed -z--spot-index-level-4 w-full bg-spot-black">
+      <section
+        class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
-        <input
-          class="hidden h-6 border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Søg..."
-        />
-        <img
-          class="w-4 cursor-pointer"
-          src="./img/svg/search.svg"
-          alt="søgeikon"
-        />
-      </div>
-      <h3 class="link p-0 no-underline">Hjælp</h3>
-    </section>
-    <div
-      class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
-    >
-      <div class="w-full">
-        <div class="flex w-full justify-between lg:justify-start">
-          <div class="dropdown">
-            <div tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
-            >
-              <li>
-                <a href="lineup.html" class="link no-underline">lineup</a>
-              </li>
-              <li>
-                <a href="program.html" class="link no-underline">program</a>
-              </li>
-              <li>
-                <a href="billetter.html" class="link no-underline"
-                  >billetter</a
+        <div
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-light-gray"
+        >
+          <input
+            class="hidden h-6 border-none bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray md:block"
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Søg..."
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./img/svg/search.svg"
+            alt="søgeikon"
+          />
+        </div>
+        <h3 class="link p-0 no-underline">Hjælp</h3>
+      </section>
+      <div
+        class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
+      >
+        <div class="w-full">
+          <div class="flex w-full justify-between lg:justify-start">
+            <div class="dropdown">
+              <div tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-              </li>
-              <li tabindex="0">
-                <a href="om.html" class="justify-between">
-                  Om
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
+              >
+                <li>
+                  <a href="lineup.html" class="link no-underline">lineup</a>
+                </li>
+                <li>
+                  <a href="program.html" class="link no-underline">program</a>
+                </li>
+                <li>
+                  <a href="billetter.html" class="link no-underline"
+                    >billetter</a
                   >
-                    <path
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </a>
-                <ul class="bg-spot-black p-2">
-                  <li>
-                    <a href="om.html" class="link no-underline">om Spot</a>
-                  </li>
-                  <li>
-                    <a href="nyheder.html" class="link no-underline"
-                      >nyheder</a
+                </li>
+                <li tabindex="0">
+                  <a href="om.html" class="justify-between">
+                    Om
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                     >
-                  </li>
-                  <li>
-                    <a href="frivillig.html" class="link no-underline"
-                      >Frivillige</a
-                    >
-                  </li>
-                  <li>
-                    <a href="faq.html" class="link no-underline">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="ansog.html" class="link no-underline">Ansøg</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="link no-underline">Spot+</a></li>
-            </ul>
+                      <path
+                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="bg-spot-black p-2">
+                    <li>
+                      <a href="om.html" class="link no-underline">om Spot</a>
+                    </li>
+                    <li>
+                      <a href="nyheder.html" class="link no-underline"
+                        >nyheder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="frivillig.html" class="link no-underline"
+                        >Frivillige</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="link no-underline">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="ansog.html" class="link no-underline">Ansøg</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="link no-underline">Spot+</a></li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+            >
+              <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
+              <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
+                Spot Festival
+              </h3>
+            </a>
           </div>
-          <a
-            href="index.html"
-            class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+        </div>
+        <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
+          <ul
+            class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
           >
-            <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
-            <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
-              Spot Festival
-            </h3>
-          </a>
+            <li>
+              <a href="lineup.html" class="link p-0 no-underline">lineup</a>
+            </li>
+            <li>
+              <a href="program.html" class="link p-0 no-underline">program</a>
+            </li>
+            <li>
+              <a href="billetter.html" class="link p-0 no-underline"
+                >billetter</a
+              >
+            </li>
+            <li
+              class="underline decoration-[3px] underline-offset-[5px]"
+              tabindex="0"
+            >
+              <a href="om.html" class="p-0">
+                Om
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-spot-black p-2">
+                <li>
+                  <a href="om.html" class="link mb-2 p-0 no-underline"
+                    >Om Spot</a
+                  >
+                </li>
+                <li>
+                  <a href="nyheder.html" class="link mb-2 p-0 no-underline"
+                    >nyheder</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillig.html" class="link mb-2 p-0 no-underline"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
+                </li>
+                <li>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline"
+                    >Ansøg</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
-        <ul
-          class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
-        >
-          <li>
-            <a href="lineup.html" class="link p-0 no-underline">lineup</a>
-          </li>
-          <li>
-            <a href="program.html" class="link p-0 no-underline">program</a>
-          </li>
-          <li>
-            <a href="billetter.html" class="link p-0 no-underline"
-              >billetter</a
-            >
-          </li>
-          <li
-            class="underline decoration-[3px] underline-offset-[5px]"
-            tabindex="0"
-          >
-            <a href="om.html" class="p-0">
-              Om
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="bg-spot-black p-2">
-              <li>
-                <a href="om.html" class="link mb-2 p-0 no-underline"
-                  >Om Spot</a
-                >
-              </li>
-              <li>
-                <a href="nyheder.html" class="link p-0 mb-2 no-underline"
-                  >nyheder</a
-                >
-              </li>
-              <li>
-                <a href="frivillig.html" class="link mb-2 p-0 no-underline"
-                  >Frivillige</a
-                >
-              </li>
-              <li>
-                <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
-              </li>
-              <li>
-                <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-    <main class="mx-spot-margin-50 py-spot-margin-100 relative">
-      <section class="noisy w-full fixed -z--spot-index-level-1"></section>
+    </header>
+    <main class="relative mx-spot-margin-50 py-spot-margin-100">
+      <section class="noisy fixed -z--spot-index-level-1 w-full"></section>
       <section
-        class="flex flex-col gap-spot-gap-15 text-spot-xs normal-case  md:flex-row md:gap-spot-gap-25 md:text-spot-sm md:w-full"
+        class="flex flex-col gap-spot-gap-15 text-spot-xs normal-case md:w-full md:flex-row md:gap-spot-gap-25 md:text-spot-sm"
       >
         <div class="md:w-2/3">
           <h1
-            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display "
+            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
           >
             Om spot
           </h1>
-          <div class=" text-spot-sm md:text-spot-base normal-case font-spot-aktiv-grotesk lg:w-2/3">
+          <div
+            class="font-spot-aktiv-grotesk text-spot-sm normal-case md:text-spot-base lg:w-2/3"
+          >
             <div>
               <p>
-                SPOT - en musikalsk øjenåbner, SPOT har i mere end 20 år været en
-                formidlingsplatform for den danske og nordiske musik.
+                SPOT - en musikalsk øjenåbner, SPOT har i mere end 20 år været
+                en formidlingsplatform for den danske og nordiske musik.
               </p>
-    
+
               <p>
-                SPOT afholder over 200 koncerter og events i løbet af festivalen, og
-                foruden hundredevis af optrædener fra de mest spændende
-                upcoming-bands og artister inkluderer festivalen også film, oplæg og
-                meget mere.
+                SPOT afholder over 200 koncerter og events i løbet af
+                festivalen, og foruden hundredevis af optrædener fra de mest
+                spændende upcoming-bands og artister inkluderer festivalen også
+                film, oplæg og meget mere.
               </p>
-    
+
               <p>
-                Festivalen finder sted rundt omkring i Aarhus og på mange af byens
-                spillesteder og kulturinstitutioner - heriblandt Musikhuset Aarhus,
-                Godsbanen, DOKK1 samt på en række udendørsscener.
+                Festivalen finder sted rundt omkring i Aarhus og på mange af
+                byens spillesteder og kulturinstitutioner - heriblandt
+                Musikhuset Aarhus, Godsbanen, DOKK1 samt på en række
+                udendørsscener.
               </p>
             </div>
             <div class="pt-spot-padding-30">
-              <h3 class="text-spot-md font-spot-bold md:text-spot-lg uppercase font-spot-aktiv-grotesk-ex">Spot på midten</h3>
-              <p>SPOT på Midten er et projekt skabt for at sætte fokus på alle de talenter, der befolker de jyske egne i Region Midtjylland. Over en tre-årig periode skal vi - i tæt samarbejde med lokale aktører og arrangørforeninger for og af unge - afdække og understøtte det sprudlende udbud af unge, lokale musikere og arrangører, der holder kreativiteten i live på scenerne på tværs af regionen.<br> <a class="underline cursor-pointer hover:text-spot-accent-1" target="_blank" href="http://spotpaamidten.dk/">Læs mere om SPOT på midten her.</a></p>
+              <h3
+                class="font-spot-aktiv-grotesk-ex text-spot-md font-spot-bold uppercase md:text-spot-lg"
+              >
+                Spot på midten
+              </h3>
+              <p>
+                SPOT på Midten er et projekt skabt for at sætte fokus på alle de
+                talenter, der befolker de jyske egne i Region Midtjylland. Over
+                en tre-årig periode skal vi - i tæt samarbejde med lokale
+                aktører og arrangørforeninger for og af unge - afdække og
+                understøtte det sprudlende udbud af unge, lokale musikere og
+                arrangører, der holder kreativiteten i live på scenerne på tværs
+                af regionen.<br />
+                <a
+                  class="cursor-pointer underline hover:text-spot-accent-1"
+                  target="_blank"
+                  href="http://spotpaamidten.dk/"
+                  >Læs mere om SPOT på midten her.</a
+                >
+              </p>
             </div>
           </div>
         </div>
-        <picture class=" flex justify-center self-center w-1/2 md:w-1/3">
-          <source
-            class=""
-            srcset="img/spot2023plakat.avif"
-            type="image/avif"
-          />
+        <picture class="flex w-1/2 justify-center self-center md:w-1/3">
+          <source class="" srcset="img/spot2023plakat.avif" type="image/avif" />
           <img
             class="w-3/4"
             src="img/spot2023plakat.webp"
             alt="Billede af SPOTplakat for 2023"
           />
         </picture>
-        
       </section>
       <section
-        class="mt-spot-margin-50 flex flex-col md:mt-spot-margin-120 md:flex-row justify-evenly"
+        class="mt-spot-margin-50 flex flex-col justify-evenly md:mt-spot-margin-120 md:flex-row"
       >
         <div>
-          <h2 class="text-spot-md font-spot-bold md:text-spot-xxl ">kontakt</h2>
+          <h2 class="text-spot-md font-spot-bold md:text-spot-xxl">kontakt</h2>
           <p
-            class="pb-spot-padding-45 text-spot-sm normal-case md:w-3/4 md:gap-spot-gap-25 md:text-spot-sm font-spot-aktiv-grotesk"
+            class="pb-spot-padding-45 font-spot-aktiv-grotesk text-spot-sm normal-case md:w-3/4 md:gap-spot-gap-25 md:text-spot-sm"
           >
             Vi ved, at det kan være svært at finde hoved og hale i det hele, men
             du kan eventuelt tjekke vores FAQ.
           </p>
           <a
             href="faq.html"
-            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black active:scale-95"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
           >
             FAQ
           </a>
           <p
-            class="pt-spot-padding-45 text-spot-sm normal-case md:gap-spot-gap-25 md:text-spot-sm font-spot-aktiv-grotesk"
+            class="pt-spot-padding-45 font-spot-aktiv-grotesk text-spot-sm normal-case md:gap-spot-gap-25 md:text-spot-sm"
           >
             Besvarede det ikke dit spørgsmål? <br />
-            Tøv ikke du er altid velkommen til at kontakte os
+            Tøv ikke du er altid velkommen til at kontakte os.
           </p>
         </div>
         <div
@@ -286,7 +304,7 @@
             <input
               class="w-full border-spot-2 border-spot-gray bg-spot-black placeholder:text-spot-sm placeholder:text-spot-light-gray focus:ring-spot-accent-1"
               type="text"
-              placeholder="eksempel@gmail.com"
+              placeholder="Eksempel@minmail.com"
               id="email"
               name="email"
               minlength="2"
@@ -331,75 +349,97 @@
             </form>
           </div>
           <button
-            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:scale-95 focus:bg-spot-white focus:text-spot-black "
           >
             send besked
           </button>
         </div>
       </section>
       <section class="mt-spot-margin-50 md:mt-spot-margin-120">
-        <h2 class="text-spot-md font-spot-bold md:text-spot-xxl pb-spot-padding-20">
+        <h2
+          class="pb-spot-padding-20 text-spot-md font-spot-bold md:text-spot-xxl"
+        >
           en stor tak til
         </h2>
         <div
           class="flex flex-wrap justify-evenly gap-spot-gap-15 md:gap-spot-gap-65"
         >
-        <img
-            class="h-10 w-auto md:h-20"
-            src="img/musiccity.png"
-            alt="Music City Aarhus logo"
-          />
-          
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/gaffa.png"
-            alt="Gaffa logo"
-          />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/mxd.png"
-            alt="Music Export Denmark logo"
-          />
-          <img class="h-10 w-auto md:h-20" src="img/dmf.png" alt="DMF logo" />
-          <img class="h-10 w-auto md:h-20" src="img/h2o.png" alt="H2O logo" />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/Kodakultur.png"
-            alt="Koda kultur logo"
-          />
+          <a href="https://musiccityaarhus2022.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/musiccity.png"
+              alt="Music City Aarhus logo"
+            />
+          </a>
 
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/statenskunstfond.png"
-            alt="Statens Kunstfond logo"
-          />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/autor.png"
-            alt="Autor logo"
-          />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/kommune.png"
-            alt="Aarhus kommune logo"
-          />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/danskartistforbund.png"
-            alt="Dansk Artist Forbund logo"
-          />
-          <img
-            class="h-10 w-auto md:h-20"
-            src="img/promus.png"
-            alt="Promus logo"
-          />
-          <img class="h-10 w-auto md:h-20" src="img/dpa.png" alt="DPA logo" />
+          <a href="https://gaffa.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/gaffa.png"
+              alt="Gaffa logo"
+            />
+          </a>
+          <a href="https://mxd.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/mxd.png"
+              alt="Music Export Denmark logo"
+            />
+          </a>
+          <a href="https://dmf.dk/"
+            ><img class="h-10 w-auto md:h-20" src="img/dmf.png" alt="DMF logo"
+          /></a>
+          <a href="https://h2o-sportswear.dk/"><img class="h-10 w-auto md:h-20" src="img/h2o.png" alt="H2O logo" /></a>
+          <a href="https://kultur.koda.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/Kodakultur.png"
+              alt="Koda kultur logo"
+            />
+          </a>
+
+          <a href="https://www.facebook.com/kunstfond/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/statenskunstfond.png"
+              alt="Statens Kunstfond logo"
+            />
+          </a>
+          <a href="https://www.autor.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/autor.png"
+              alt="Autor logo"
+            />
+          </a>
+          <a href="https://www.aarhus.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/kommune.png"
+              alt="Aarhus kommune logo"
+            />
+          </a>
+          <a href="https://www.artisten.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/danskartistforbund.png"
+              alt="Dansk Artist Forbund logo"
+            />
+          </a>
+          <a href="http://www.promus.dk/">
+            <img
+              class="h-10 w-auto md:h-20"
+              src="img/promus.png"
+              alt="Promus logo"
+            />
+          </a>
+          <a href="https://dpa.org/"><img class="h-10 w-auto md:h-20" src="img/dpa.png" alt="DPA logo" /></a>
         </div>
       </section>
     </main>
     <footer class="relative -z--spot-index-level-2 bg-spot-black">
       <div
-        class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60 md:flex-row md:items-center md:justify-between"
+        class="flex flex-col border-b-spot-2 border-spot-dark-gray px-spot-padding-50 py-spot-padding-20 md:flex-row md:items-center md:justify-between"
       >
         <div class="gap-gap-5 flex flex-col">
           <h3>forbliv opdateret</h3>
@@ -413,7 +453,7 @@
           <label class="text-spot-sm" for="email">Email</label>
 
           <input
-            class="border-spot-gray bg-spot-black text-spot-xs text-spot-white placeholder:text-spot-gray"
+            class="border-spot-gray bg-spot-black text-spot-white placeholder:text-spot-sm placeholder:text-spot-light-gray focus:ring-spot-dark-gray"
             type="email"
             placeholder="Eksempel@minmail.dk"
             id="email"
@@ -421,7 +461,7 @@
             size="30"
           />
           <button
-            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black active:scale-95"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:rounded-none focus:bg-spot-white focus:text-spot-black active:scale-95"
           >
             Tilmeld
           </button>
@@ -540,7 +580,7 @@
             <li>
               <a href="https://www.facebook.com/spotfestival">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/facebook.svg"
                   alt="facebook logo"
               /></a>
@@ -548,7 +588,7 @@
             <li>
               <a href="https://www.youtube.com/@SPOTFestivaldk">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/youtube.svg"
                   alt="youtube logo"
               /></a>
@@ -556,7 +596,7 @@
             <li>
               <a href="https://www.instagram.com/spotfestival/">
                 <img
-                  class="hover:scale-95 w-fit h-auto"
+                  class="h-auto w-fit hover:scale-95"
                   src="img/svg/instagram.svg"
                   alt="instagram logo"
               /></a>
@@ -580,7 +620,12 @@
                 >+45 71 74 71 22</span
               >
             </p>
-            <p class="pt-spot-padding-8 text-spot-sm">Adresse: <span class="underline hover:text-spot-accent-1">Vester Alle 15, 8000 Aarhus C DK</span></p>
+            <p class="pt-spot-padding-8 text-spot-sm">
+              Adresse:
+              <span class="underline hover:text-spot-accent-1"
+                >Vester Alle 15, 8000 Aarhus C DK</span
+              >
+            </p>
           </div>
         </section>
         <section
@@ -597,12 +642,10 @@
       <section
         class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxs text-spot-light-gray md:text-spot-xs"
       >
-        <p>
-          A KEA SCHOOL PROJECT BY LAURA & MATHILDE
-        </p>
+        <p>A KEA SCHOOL PROJECT BY LAURA & MATHILDE</p>
       </section>
     </footer>
-    
+
     <script src="./main.js" type="module"></script>
   </body>
 </html>

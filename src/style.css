@@ -91,9 +91,9 @@
     background-size: 100% 2px;
     pointer-events: none;
   }
-  input[type="range"]:active,
-  input[type="range"]:focus {
-    outline: none;
+  
+  input[type="range"]:focus-visible {
+    outline: 2px solid #4F4F4F;
   }
   input[type="range"]::-webkit-slider-thumb {
     height: 28px;
@@ -627,46 +627,12 @@
   details summary {
     outline: 0;
   }
+ 
+
+ 
+  details summary:focus-visible {
+    outline: 2px solid #4F4F4F;
+  }
 }
 
 
-.genrebutton {
-  position: relative;
-  -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.genrebutton:focus {
-  transform: scale(0.95);
-}
-
-.genrebutton:checked {
-  transform: scale(0.95);
-  color:  #f9f9f9;
-}
-
-.genrebutton input {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border: none;
-  background-color: transparent;
-}
-
-.checkboks:checked {
-background-color: #1e1e1e;
-color:  #f9f9f9;
-}
-
-.genretitle {
-position: relative;
-z-index: 5;
-}
-
-[data-checkbox]:checked:after{
-  display: none;
-}
