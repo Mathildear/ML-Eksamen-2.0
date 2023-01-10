@@ -191,20 +191,18 @@
       <section class="noisy fixed -z--spot-index-level-1 w-full"></section>
       <div class="relative -z--spot-index-level-3 w-full pt-spot-margin-100">
         <h1
-          class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
+          class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display md:leading-tight md:mt-spot-margin-25"
         >
           program
         </h1>
         <div
           class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:items-center lg:justify-center"
         >
-          <div class="mt-spot-margin-30">
+          <div>
             <section>
-              <p class="mb-spot-margin-15 text-spot-sm">
-                sorter efter dag
-              </p>
-    
-              <div class="flex flex-row gap-spot-gap-25 mb-spot-margin-40">
+              <p class="mb-spot-margin-15 text-spot-sm">sorter efter dag</p>
+
+              <div class="mb-spot-margin-40 flex flex-row gap-spot-gap-25">
                 <a
                   href="#fredagprogram"
                   class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
@@ -218,7 +216,7 @@
                   lørdag
                 </a>
               </div>
-    
+
               <h4 class="mb-spot-margin-15 text-spot-sm">
                 Søg efter artist eller sted
               </h4>
@@ -267,19 +265,24 @@
             <section>
               <h4 class="mb-spot-margin-15 text-spot-sm">Søg efter genre</h4>
               <div class="flex flex-wrap gap-spot-gap-5">
+                <label
+                  class="genrebutton w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                ><input class="checkboks" type="checkbox">
+              
+                  <span class="genretitle">pop</span>
+              </label>
                 <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                  class="genrebutton w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
                 >
-                  pop
+                <input class="checkboks" type="checkbox">
+                <span class="genretitle">rock</span>
+                  
                 </button>
+                
                 <button
                   class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
                 >
-                  rock
-                </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
+                
                   reggae
                 </button>
                 <button
@@ -308,8 +311,10 @@
                 </button>
               </div>
             </section>
+            
           </div>
-          <div class="flex flex-col md:flex-row">
+          <div class="mt-spot-margin-40 flex flex-col md:mt-spot-margin-0">
+            <h4 class="mb-spot-margin-15 text-spot-sm">Søg via kortet</h4>
             <picture class="mt-spot-margin-0 mb-spot-margin-40 sm:hidden">
               <source class="" srcset="img/map-ver.avif" type="image/avif" />
               <img class="" src="img/map-ver.webp" alt="koncertbillede" />
@@ -326,28 +331,10 @@
         </div>
         <div>
           <h3
-            class="my-spot-margin-30 text-center font-spot-aktiv-grotesk-ex text-spot-lg font-spot-black md:text-spot-xxl"
+            class="mt-spot-margin-30 text-center font-spot-aktiv-grotesk-ex text-spot-lg font-spot-black md:text-spot-xxl"
           >
             Godsbanen
           </h3>
-          <p class="mb-spot-margin-25 text-center text-spot-sm">
-            sorter efter dag
-          </p>
-
-          <div class="flex flex-row justify-center gap-spot-gap-25">
-            <a
-              href="#fredagprogram"
-              class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-            >
-              fredag
-            </a>
-            <a
-              href="#lørdagprogram"
-              class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-            >
-              lørdag
-            </a>
-          </div>
 
           <table class="flex table-fixed flex-col pb-spot-padding-50 md:hidden">
             <thead>
@@ -412,7 +399,7 @@
           </table>
           <section
             id="fredagprogram"
-            class="hidden md:block md:pt-spot-padding-120"
+            class="hidden md:block md:pt-spot-padding-60"
           >
             <div class="mx-spot-margin-50 flex flex-col items-center">
               <h3 class="text-center text-spot-lg font-spot-black">Fredag</h3>

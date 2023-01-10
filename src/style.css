@@ -628,3 +628,45 @@
     outline: 0;
   }
 }
+
+
+.genrebutton {
+  position: relative;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.genrebutton:focus {
+  transform: scale(0.95);
+}
+
+.genrebutton:checked {
+  transform: scale(0.95);
+  color:  #f9f9f9;
+}
+
+.genrebutton input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.checkboks:checked {
+background-color: #1e1e1e;
+color:  #f9f9f9;
+}
+
+.genretitle {
+position: relative;
+z-index: 5;
+}
+
+[data-checkbox]:checked:after{
+  display: none;
+}
