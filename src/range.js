@@ -36,7 +36,7 @@ function slideTwo() {
 function fillColor() {
   let percent1 = (sliderOne.value / sliderMaxValue) * 100;
   let percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  sliderTrack.style.background = `linear-gradient(to right, #4F4F4F ${percent1}% , #a3be8c ${percent1}% , #a3be8c ${percent2}%, #4f4f4f ${percent2}%)`;
+  sliderTrack.style.background = `linear-gradient(to right, #4F4F4F ${percent1}% , #999999 ${percent1}% , #999999 ${percent2}%, #4f4f4f ${percent2}%)`;
 }
 
 const valueMapToDisplay = (value) => {
