@@ -73,7 +73,7 @@
     top: -80%;
   }
 
-  input[type="range"] {
+  /* input[type="range"] {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -82,17 +82,17 @@
     margin: 0;
     padding: 0 2px;
     /* Add some L/R padding to ensure box shadow of handle is shown */
-    overflow: hidden;
-    border: 0;
-    border-radius: 1px;
-    outline: none;
-    background: linear-gradient(grey, grey) no-repeat center;
+    /* overflow: hidden;
+    border: 0; */
+    /* border-radius: 1px; */
+    /* outline: none;
+    background: linear-gradient(grey, grey) no-repeat center; */
     /* Use a linear gradient to generate only the 2px height background */
-    background-size: 100% 2px;
+    /* background-size: 100% 2px;
     pointer-events: none;
-  }
+  } */
   
-  input[type="range"]:focus-visible {
+  /* input[type="range"]:focus-visible {
     outline: 2px solid #4F4F4F;
   }
   input[type="range"]::-webkit-slider-thumb {
@@ -101,10 +101,10 @@
     border-radius: 28px;
     background-color: #fff;
     position: relative;
-    margin: 5px 0;
+    margin: 5px 0; */
     /* Add some margin to ensure box shadow is shown */
 
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     appearance: none;
     pointer-events: all;
     box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
@@ -128,7 +128,7 @@
 
   .multi-range input[type="range"]:nth-child(2) {
     background: none;
-  }
+  } */ 
 
   .link {
     position: relative;
@@ -748,6 +748,8 @@ div label input {margin-right: 100px;}
   display: none;
   color: #f9f9f9 !important;
 }
+
+
 /* selects all of the text within the input element and changes the color of the text */
 .cat label input + span{color: #f9f9f9;}
 
@@ -780,3 +782,4 @@ color: #1e1e1e;}
   color: #1e1e1e;}
 .andre input:checked + span{background-color: #f9f9f9;
   color: #1e1e1e;}
+
