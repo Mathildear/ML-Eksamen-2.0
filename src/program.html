@@ -230,7 +230,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col items-center justify-center">
+            <!-- <div class="flex flex-col items-center justify-center">
               <h4 class="mb-spot-margin-15 text-center text-spot-base text-spot-light-gray">
                 Søg efter tidspunkt
               </h4>
@@ -259,7 +259,26 @@
                   />
                 </div>
               </span>
+            </div> -->
+
+            <div>
+              <p>Søg efter tidspunkt</p>
+              <div class="values">
+                <span id="range1">
+                  6
+                </span>
+                <span> &dash; </span>
+                <span id="range2">
+                  19
+                </span>
+              </div>
+              <div class="slidercontainer">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="23" value="6" id="slider-1">
+                <input type="range" min="0" max="23" value="19" id="slider-2">
+              </div>
             </div>
+
 
             <div class="flex flex-col items-center justify-center">
               <h4 class="text-spot-base mb-spot-margin-15 text-spot-light-gray">Søg efter artist eller sted</h4>
@@ -278,47 +297,64 @@
             </div>
             <section class="flex flex-col items-center">
               <h4 class="mb-spot-margin-15 text-spot-base text-spot-light-gray">Søg efter genre</h4>
+              <div class="container">
+                <div class="cat pop">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">pop</span>
+                   </label>
+                </div>
+                
+                <div class="cat rock">
+                   <label class="">
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">Rock</span>
+                   </label>
+                </div>
+                
+                <div class="cat reggae">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">reggae</span>
+                   </label>
+                </div>
+                
+                <div class="cat electronic">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">electronic</span>
+                   </label>
+                </div>
+                
+                <div class="cat soul">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">soul</span>
+                   </label>
+                </div>
+                
+                <div class="cat rnb">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">R&B</span>
+                   </label>
+                </div>
+                
+                  <div class="cat country">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">Country</span>
+                   </label>
+                </div>
+                
+                  <div class="cat andre">
+                   <label>
+                      <input type="checkbox" value="1"><span class="text-spot-xs font-spot-bold uppercase">Andre</span>
+                   </label>
+                </div>
+                
+                </div>
+
               <div class="flex flex-wrap justify-center gap-spot-gap-5">
                 <button
                   class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
                 >
                   pop
                 </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  rock
-                </button>
 
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  reggae
-                </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  electronic
-                </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  soul</button
-                ><button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  R&B
-                </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  country
-                </button>
-                <button
-                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
-                >
-                  andre genre
-                </button>
               </div>
             </section>
 
@@ -816,4 +852,5 @@
       </section>
     </footer>
   </body>
+  <script src="./range.js" type="module"></script>
 </html>

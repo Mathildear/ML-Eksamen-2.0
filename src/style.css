@@ -636,3 +636,143 @@
 }
 
 
+
+.slidercontainer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.slider-track {
+  width: 100%;
+  /*   height: 5px; */
+  height: 1em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 1em;
+}
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 1em;
+}
+input[type="range"]::-ms-track {
+  appearance: none;
+  height: 1em;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #a3be8c;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #a3be8c;
+  pointer-events: auto;
+}
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #a3be8c;
+  pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 3px solid #4c566a;
+}
+
+
+
+
+
+div label input {margin-right: 100px;}
+
+.cat{
+  margin: 2px;
+  background-color: #1e1e1e;
+  border: 3px solid #f9f9f9;
+  overflow: hidden;
+  float: left;
+  padding-left: 8px;
+  padding-right: 15px;
+}
+
+.cat label {
+  float: left; line-height: auto;
+  width: auto;
+  height: auto;
+
+}
+
+.cat label span {
+  text-align: center;
+  padding: 3px 2px;
+  display: block;
+}
+
+.cat label input {
+  position: absolute;
+  display: none;
+  color: #fff !important;
+}
+/* selects all of the text within the input element and changes the color of the text */
+.cat label input + span{color: #fff;}
+
+
+/* This will declare how a selected input will look giving generic properties */
+.cat input:checked + span {
+    color: #ffffff;
+    text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
+}
+
+
+/*
+This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
+*/
+
+.pop input:checked + span{background-color: #f9f9f9;
+color: #1e1e1e;}
+.rock input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.reggae input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.electronic input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.soul input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.rnb input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.country input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
+.andre input:checked + span{background-color: #f9f9f9;
+  color: #1e1e1e;}
