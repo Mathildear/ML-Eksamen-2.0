@@ -19,9 +19,6 @@
     pointer-events: none;
     /* animation: noise 1s steps(2) infinite; */
   }
-  
-
-  
 
   .hidethis {
     visibility: hidden;
@@ -82,16 +79,16 @@
     margin: 0;
     padding: 0 2px;
     /* Add some L/R padding to ensure box shadow of handle is shown */
-    /* overflow: hidden;
+  /* overflow: hidden;
     border: 0; */
-    /* border-radius: 1px; */
-    /* outline: none;
+  /* border-radius: 1px; */
+  /* outline: none;
     background: linear-gradient(grey, grey) no-repeat center; */
-    /* Use a linear gradient to generate only the 2px height background */
-    /* background-size: 100% 2px;
+  /* Use a linear gradient to generate only the 2px height background */
+  /* background-size: 100% 2px;
     pointer-events: none;
   } */
-  
+
   /* input[type="range"]:focus-visible {
     outline: 2px solid #4F4F4F;
   }
@@ -102,9 +99,9 @@
     background-color: #fff;
     position: relative;
     margin: 5px 0; */
-    /* Add some margin to ensure box shadow is shown */
+  /* Add some margin to ensure box shadow is shown */
 
-    /* -webkit-appearance: none;
+  /* -webkit-appearance: none;
     appearance: none;
     pointer-events: all;
     box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
@@ -128,7 +125,7 @@
 
   .multi-range input[type="range"]:nth-child(2) {
     background: none;
-  } */ 
+  } */
 
   .link {
     position: relative;
@@ -627,15 +624,11 @@
   details summary {
     outline: 0;
   }
- 
 
- 
   details summary:focus-visible {
-    outline: 2px solid #4F4F4F;
+    outline: 2px solid #4f4f4f;
   }
 }
-
-
 
 .slidercontainer {
   position: relative;
@@ -665,7 +658,6 @@ input[type="range"] {
   top: 0;
   bottom: 0;
   border-radius: 5px;
- 
 }
 input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
@@ -709,16 +701,18 @@ input[type="range"]::-ms-thumb {
 }
 input[type="range"]:active::-webkit-slider-thumb {
   background-color: #f9f9f9;
-  border: 3px solid #4F4F4F;
+  border: 3px solid #4f4f4f;
 }
 
+.slidercontainer input:focus-visible {
+  outline: 2px solid #4f4f4f;
+}
 
+div label input {
+  margin-right: 100px;
+}
 
-
-
-div label input {margin-right: 100px;}
-
-.cat{
+.cat {
   margin: 2px;
   background-color: #1e1e1e;
   border: 3px solid #f9f9f9;
@@ -727,11 +721,10 @@ div label input {margin-right: 100px;}
 }
 
 .cat label {
-  float: left; 
+  float: left;
   line-height: auto;
   width: auto;
   height: auto;
-
 }
 
 .cat label span {
@@ -749,37 +742,49 @@ div label input {margin-right: 100px;}
   color: #f9f9f9 !important;
 }
 
-
 /* selects all of the text within the input element and changes the color of the text */
-.cat label input + span{color: #f9f9f9;}
-
+.cat label input + span {
+  color: #f9f9f9;
+}
 
 /* This will declare how a selected input will look giving generic properties */
 .cat input:checked + span {
-    color: #f9f9f9;
-    text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
+  color: #f9f9f9;
 }
-
-
 
 /*
 This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
 
-.pop input:checked + span{background-color: #f9f9f9;
-color: #1e1e1e;}
-.rock input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.reggae input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.electronic input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.soul input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.rnb input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.country input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-.andre input:checked + span{background-color: #f9f9f9;
-  color: #1e1e1e;}
-
+.pop input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.rock input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.reggae input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.electronic input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.soul input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.rnb input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.country input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+.andre input:checked + span {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
